@@ -70,14 +70,14 @@ select{
 #calcBtn{
     margin-right: 15px;
     width: 30%;
-    height: 30px;
+    height: 35px;
     background-color:#05386B;
     color: white;
 }
 
 #cancelBtn{
     width: 30%;
-    height: 30px;
+    height: 35px;
     background-color:#E50914;
     color: white;
 }
@@ -85,5 +85,10 @@ select{
 label{
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+#closing-text{
+    text-align: center;
+    font-size: 1.2rem;
 }
 
