@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inner-container">
+            <form>
+
+                <div class="header-title">
+                    <h3>The Tax Calculator</h3>
+                </div>
+                
+
+                <div class="div-align-block">
+                    <label for="Itemvx">Enter Item Value</label>
+                    <input type="text" id="itemValue" name="Item-Value">
+                </div>
+
+                <div class="div-align-block">
+                    <label for="tax">Tax Type:</label>
+                    <select name="taxes" id="taxType">
+                        <option value="makeSelection">Select Tax Type</option>
+                        <option value="gct-Comp">GCT (Computer Items (15%))</option>
+                        <option value="gct-Gen">GCT (All Other Items (15%))</option>
+                        <option value="gct-Tele">GCT (Telephone Services (25%))</option>
+                    </select>
+                </div>
+
+                <div id="txtDiv">
+                    <p id="txtArea"> </p>
+                </div>               
+                
+               
+
+                <div class="btnDiv">
+                    <button id="calcBtn">Calculate</button>
+                    <button id="cancelBtn">Cancel</button>
+                </div>
+
+                <div>
+                    <p>This calculator is intended to help you easily
+                        calculate consumer charges in Jamaica.
+                        #keepThemHonest
+                    </p>
+                </div>
+
+                
+
+
+            </form>
+
+        </div>
+    </div>
+ 
+    <script src="app.js" async></script>
+</body>
+</html>
