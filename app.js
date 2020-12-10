@@ -3,7 +3,7 @@ let result = document.getElementById("txtArea");
 let initValue = document.getElementById("itemValue");
 
 calcBtn.onclick  = function calcAllTaxes(){
-    if(tType.value=="gct-Comp" || tType.value=="gct-Gen"){
+    if(tType.value=="gct-Comp"){
     calculation = (0.15*initValue.value) + Number(initValue.value);
     result.innerHTML=("$" + calculation.toFixed(2))
     event.preventDefault();
@@ -18,11 +18,9 @@ calcBtn.onclick  = function calcAllTaxes(){
 
 cancelBtn.onclick=(function(){
      initValue.innerText="";
-     tType.innerText="";
-
-
+     tType.value=makeSelection;
  })
 
-//  calcAllTaxes();
+
 
 

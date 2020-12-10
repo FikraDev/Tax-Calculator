@@ -11,7 +11,7 @@ body{
 }
 
 .inner-container{
-    margin-top: 50px;
+    margin-top: 150px;
     max-width: 800px;
     border: 4px solid#379683 ;
 }
@@ -25,6 +25,7 @@ body{
 .div-align-block{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 15px;
     margin-left: 50px;
     margin-right: 50px;
@@ -32,7 +33,7 @@ body{
 }
 
 #itemValue{
-    width:100%;
+    width:80%;
     height: 20px;
     border-radius: 8px;
     padding: 10px;
@@ -41,7 +42,7 @@ body{
 }
 
 select{
-    width:104%;
+    width:84%;
     height: 40px;
     border-radius: 8px;
     font-size: 18px;  
@@ -90,5 +91,12 @@ label{
 #closing-text{
     text-align: center;
     font-size: 1.2rem;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+footer{
+    margin-top: 150px;
+    text-align: center;
 }
 
