@@ -7,7 +7,8 @@ body{
 
 .container{
     display: flex;
-	justify-content: center;
+    justify-content: center;
+    margin: 10px;
 }
 
 .inner-container{
@@ -46,6 +47,20 @@ select{
     height: 40px;
     border-radius: 8px;
     font-size: 18px;  
+}
+
+#txtDiv1{
+    display: flex;
+    justify-content: center;   
+}
+
+#txtArea1{
+    width: 50%;
+    height: 50px;
+    background-color: white;
+    color: #05386B;
+    text-align: center; 
+    font-size: 1.8rem;
 }
 
 #txtDiv{
