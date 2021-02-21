@@ -29,7 +29,7 @@ function acceptNumOnly(){
 
 //Function for Calculate Button
 
-calcBtn.onclick  = function calcAllTaxes(){
+calcBtn.onclick  = calcAllTaxes()=>{
     if(tType.value=="gct-Comp"){
     calculation1 = (0.15*initValue.value);    
     calculation = (0.15*initValue.value) + Number(initValue.value);
@@ -48,7 +48,7 @@ calcBtn.onclick  = function calcAllTaxes(){
 
 //IIFE for Cancel Button
 
-cancelBtn.onclick=(function(){
+cancelBtn.onclick=(()=>{
      initValue.innerText="";
      tType.value=makeSelection;
  })
