@@ -1,117 +1,29 @@
 body{
-    padding:0;
-    margin: 0;
-    background-color: #5cdb95;
-    color: #05386B;
+    background-color:#2F2FA2;
+    color:#fff;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+.solution{
+    background-color: #fff;
+    width:65%;
+    height: 60px;
+    color:#000;
 }
 
-.inner-container{
-    margin-top: 150px;
-    max-width: 800px;
-    border: 4px solid#379683 ;
-}
-
-.header-title{
-    text-align: center;
-    font-size: 1.9rem;
-    font-weight: bolder;
-}
-
-.div-align-block{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 25px;
-}
-
-#itemValue{
-    width:80%;
-    height: 20px;
-    border-radius: 8px;
-    padding: 10px;
-    font-size: 1.5rem; 
-    text-align: center;
-}
-
-select{
-    width:84%;
-    height: 40px;
-    border-radius: 8px;
-    font-size: 18px;  
-}
-
-#txtDiv1{
-    display: flex;
-    justify-content: center;   
-}
-
-#txtArea1{
-    width: 50%;
-    height: 50px;
-    background-color: white;
-    color: #05386B;
-    text-align: center; 
-    font-size: 1.8rem;
-}
-
-#txtDiv{
-    display: flex;
-    justify-content: center;   
-}
-
-#txtArea{
-    width: 50%;
-    height: 50px;
-    background-color: white;
-    color: #05386B;
-    text-align: center; 
-    font-size: 1.8rem;
-}
-
-.btnDiv{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-#calcBtn{
-    margin-right: 15px;
-    width: 30%;
-    height: 35px;
-    background-color:#05386B;
-    color: white;
-}
-
-#cancelBtn{
-    width: 30%;
-    height: 35px;
-    background-color:#E50914;
-    color: white;
-}
-
-label{
-    font-size: 1.5rem;
+.frmtitle{
+    color: #F64C72;
     font-weight: bold;
+    font-size:2.5rem;
 }
 
-#closing-text{
-    text-align: center;
-    font-size: 1.2rem;
-    margin-left: 25px;
-    margin-right: 25px;
+.bder{
+    border: 6px solid #99738E;
 }
 
-footer{
-    margin-top: 150px;
-    text-align: center;
+.success{
+    border: 2px solid green;
 }
 
+.error{
+    border: 2px solid red;
+}

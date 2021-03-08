@@ -1,60 +1,26 @@
-let tType = document.getElementById("taxType");
-let result1=document.getElementById("txtArea1");
-let result = document.getElementById("txtArea");
-let initValue = document.getElementById("itemValue");
-let taxForm=document.getElementById("taxForm");
+const form = document.querySelector('.taxform');
 
-//Function to Validate User input (Numbers only)
+const calcBtn = document.querySelector('.calc');
+const clrBtn = document.querySelector('.clr');
 
-function acceptNumOnly(){
+const taxType = document.querySelector('.taxType');
 
-    var regExx = /^[0-9]+$/;
+const solution = document.querySelector('.solution');
 
-    if (initValue.value.match(regExx)){
-       return true;        
+function checkVal(){
+    if (form.valinput.value===''){
+        form.valinput.setAttribute('class', 'error');
     }
-    else{
-        alert("Please Enter Numerical Values only")
+}
 
-        taxForm.reset();
-
-        // result.innerHTML="";
-        // result1.innerHTML="";
-        // initValue.innerHTML="";
-        // tType.value=makeSelection;
+function calcTaxes(){
+    if (taxType.value==='gct-cons'){
+        solution.innerHTML=(form.valinput.value * .15).toFixed(2)
         
-        // return false;
     }
 }
 
-//Function for Calculate Button
-
-calcBtn.onclick  = function calcAllTaxes(){
-    if(tType.value=="gct-Comp"){
-    calculation1 = (0.15*initValue.value);    
-    calculation = (0.15*initValue.value) + Number(initValue.value);
-    result1.innerHTML=( "Total GCT: "+" $" + calculation1.toFixed(2))
-    result.innerHTML=("Grand Total: "+ " $" + calculation.toFixed(2))
-    event.preventDefault();
-  }
-
-    else if (tType.value=="gct-Tele"){
-        calculation = (0.25*initValue.value) + Number(initValue.value);
-        result.innerHTML=("$" + calculation.toFixed(2))
-        event.preventDefault();
-    }
-    acceptNumOnly();
-}
-
-//IIFE for Cancel Button
-
-cancelBtn.onclick=(()=>{
-     initValue.innerText="";
-     tType.value=makeSelection;
- })
-
- 
-
-
-
-
+calcBtn.addEventListener('click', ()=>{
+    checkVal();
+    calcTaxes();
+})
