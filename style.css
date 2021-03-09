@@ -8,6 +8,7 @@ body{
     width:65%;
     height: 60px;
     color:#000;
+    font-size: 1.5rem;
 }
 
 .frmtitle{
@@ -20,10 +21,26 @@ body{
     border: 6px solid #99738E;
 }
 
-.success{
-    border: 2px solid green;
+.errmsg{
+    visibility: hidden;
 }
 
-.error{
-    border: 2px solid red;
+.errmsg2{
+    visibility:visible;
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
+
+.errmsgx{
+    visibility: hidden;
+}
+
+.errmsg2x{
+    visibility:visible;
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+input {width: 100% !important; } /*prevents input from shrinking when css class is added */

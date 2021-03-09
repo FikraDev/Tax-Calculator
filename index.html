@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GCT Calculator</title>
+    <title>GCT Calculator | Home</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    
     <div class="container mt-lg-5">
 
         <div class="col-xs-4">
 
-            <div class="container-fluid h-100 text-dark">
+            <div class="container-fluid h-100">
 
                 <div class="row justify-content-center align-items-center h-100">
 
-                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-5 bder">
+                    <div class="col-6 col-6 bder">
 
                         <form action="" class="taxform">
 
@@ -25,28 +28,32 @@
                             </div>
                             <hr>
 
-                            <div class="form-group mt-lg3 mb-lg-4">
-                                <input type="text" name="valinput" class="form-control form-control-lg text-center"
-                                    placeholder="Enter Item Cost" />
-                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg text-center " placeholder="Enter Item Cost" name="valinput">
+                                <small class="errmsg">Item cost cannot be empty</small>
+                              </div>
+                                  
+                              
 
                             <div class="form-group">
-                                <select class="form-control font-weight-bold taxType">
+                                <select class="form-control form-control-lg font-weight-bold taxType">
                                     <option value="make-selection">Select Tax Type</option>
                                     <option value="gct-cons">Computer & Consumer Items(15%)</option>
                                     <option value="gct-tel">Telephone Services(25%)</option>
                                 </select>
+                                <small class="errmsgx">Tax Type must be selected</small>
                             </div>
 
                             <div class="row mt-md-5 mb-lg-5 align-items-center justify-content-center">
 
-                                <button type="button" class="btn btn-lg btn-success w-25 mr-md-3 calc">Calculate</button>
+                                <button type="button"
+                                    class="btn btn-lg btn-success w-25 mr-lg-3 calc">Calculate</button>
 
                                 <button type="button" class="btn btn-lg btn-warning w-25 clr">Clear</button>
                             </div>
 
-                            <div class=" container-fluid justify-content-center align-items-center solution mb-lg-5">
-
+                            <div class=" container-fluid justify-content-center align-items-center solution mb-lg-5 text-center">
+                                  
                             </div>
 
                         </form>
@@ -56,10 +63,11 @@
 
                 </div>
 
-    </div>
-   
-    <footer>Copyright &copy; 2020 -bigBellyDev-</footer>
-    <script src="/bootstrap.min.js"></script>
-    <script src="app.js" async></script>
+            </div>
+
+            <footer class="footer text-center mt-lg-5">Copyright &copy; 2021 -FikraDev-</footer>
+            <script src="/bootstrap.min.js"></script>
+            <script src="app.js" async></script>
 </body>
+
 </html>
